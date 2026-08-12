@@ -41,7 +41,7 @@ def evaluate_initial_status(incident_type, description, priority, has_evidence):
 def submit_report():
     global report_id_counter
 
-    print("\n=== SUBMIT NEW REPORT ===")
+    print("NEW REPORT")
 
     reporter_name = input("Reporter name: ")
     incident_type = input("Incident type lost id | room issue |lab equipment damage | bullying: ")
@@ -81,7 +81,7 @@ def submit_report():
 
 
 def review_reports():
-    print("\n=== ALL REPORTS ===")
+    print("ALL RECORDS REPORT")
 
     if len(reports) == 0:
         print("No reports submitted.")
@@ -98,7 +98,7 @@ def review_reports():
 
 
 def update_report_status():
-    print("\n=== UPDATE REPORT STATUS ===")
+    print("UPDATING REPORT")
 
     if len(reports) == 0:
         print("No reports available.")
@@ -151,7 +151,7 @@ def update_report_status():
 
 def main():
     while True:
-        print("\n=== INCIDENT REPORTING SYSTEM ===")
+        print("INCIDENT REPORT")
         print("1. Submit Report")
         print("2. Review Reports")
         print("3. Update Report Status")
